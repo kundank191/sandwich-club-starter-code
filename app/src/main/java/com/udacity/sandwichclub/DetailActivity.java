@@ -13,6 +13,7 @@ import com.udacity.sandwichclub.model.Sandwich;
 import com.udacity.sandwichclub.utils.JsonUtils;
 
 import java.util.List;
+import java.util.Objects;
 
 public class DetailActivity extends AppCompatActivity {
 
@@ -40,7 +41,7 @@ public class DetailActivity extends AppCompatActivity {
             closeOnError();
         }
 
-        int position = intent.getIntExtra(EXTRA_POSITION, DEFAULT_POSITION);
+        int position = Objects.requireNonNull(intent).getIntExtra(EXTRA_POSITION, DEFAULT_POSITION);
         if (position == DEFAULT_POSITION) {
             // EXTRA_POSITION not found in intent
             closeOnError();

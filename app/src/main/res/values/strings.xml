@@ -1,8 +1,8 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
     <string name="app_name">Sandwich Club</string>
 
     <!-- For transitions -->
-    <string name="shared_element_list_item">12948505</string>
+    <string name="shared_element_list_item" tools:keep="@string/shared_element_list_item">12948505</string>
 
     <!-- Detail Activity-->
     <string name="detail_also_known_as_label">Also known as:</string>
