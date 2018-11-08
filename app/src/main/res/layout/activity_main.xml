@@ -7,14 +7,14 @@
     android:layout_height="match_parent"
     tools:context="com.udacity.sandwichclub.MainActivity">
     
-    <android.support.v7.widget.Toolbar
+    <androidx.appcompat.widget.Toolbar
         android:id="@+id/app_bar"
         android:background="@color/colorPrimary"
         android:layout_width="match_parent"
         app:titleTextColor="@color/colorTitleText"
         android:layout_height="?actionBarSize">
 
-    </android.support.v7.widget.Toolbar>
+    </androidx.appcompat.widget.Toolbar>
 
     <ListView
         android:id="@+id/sandwiches_listview"
